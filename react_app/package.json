@@ -2,7 +2,7 @@
   "name": "meetingsdk-sample-react",
   "version": "2.4.0",
   "author": "Tommy Gaessler",
-  "homepage": "",
+  "homepage": "https://Pusse-01.github.io/zoom_integration_react_app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -16,6 +16,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

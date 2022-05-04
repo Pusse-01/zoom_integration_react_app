@@ -19,7 +19,7 @@ function App() {
   var sdkKey = 'dwTGVCHCwYG79SpLKVoyNrFY7I95tD5BdvlH'
   var meetingNumber = '89401084962'
   var role = 0
-  var leaveUrl = 'http://localhost:3000'
+  var leaveUrl = 'https://Pusse-01.github.io/zoom_integration_react_app'
   var userName = 'React'
   var userEmail = ''
   var passWord = ''
