@@ -1,7 +1,9 @@
 import React from 'react';
-
 import './App.css';
 import { ZoomMtg } from '@zoomus/websdk';
+const bodyParser = require('body-parser')
+const crypto = require('crypto')
+const KJUR = require('jsrsasign')
 
 ZoomMtg.setZoomJSLib('https://source.zoom.us/2.4.0/lib', '/av');
 
@@ -13,6 +15,8 @@ ZoomMtg.i18n.reload('en-US');
 
 function App() {
 
+  var ZOOM_SDK_KEY = 'dwTGVCHCwYG79SpLKVoyNrFY7I95tD5BdvlH'
+  var ZOOM_SDK_SECRET = 'eH3IgBzsxSJJzzbvHMb5naqweD403pOydWLE'
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   var signatureEndpoint = 'http://localhost:4000/'
   // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
@@ -45,6 +49,29 @@ function App() {
       console.error(error)
     })
   }
+
+  function createSignature(e){
+      e.preventDefault();
+    const iat = Math.round(new Date().getTime() / 1000) - 30;
+  const exp = iat + 60 * 60 * 2
+
+  const oHeader = { alg: 'HS256', typ: 'JWT' }
+
+  const oPayload = {
+    sdkKey: ZOOM_SDK_KEY,
+    mn: meetingNumber,
+    role: role,
+    iat: iat,
+    exp: exp,
+    appKey: ZOOM_SDK_KEY,
+    tokenExp: iat + 60 * 60 * 2
+  }
+
+  const sHeader = JSON.stringify(oHeader)
+  const sPayload = JSON.stringify(oPayload)
+  const signature = KJUR.jws.JWS.sign('HS256', sHeader, sPayload, ZOOM_SDK_SECRET)
+  startMeeting(signature)
+}
 
   function startMeeting(signature) {
     document.getElementById('zmmtg-root').style.display = 'block'
@@ -82,7 +109,7 @@ function App() {
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
 
-        <button onClick={getSignature}>Join Meeting</button>
+        <button onClick={createSignature}>Join Meeting</button>
       </main>
     </div>
   );
