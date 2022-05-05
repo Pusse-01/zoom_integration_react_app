@@ -23,7 +23,7 @@ function App() {
   var ZOOM_SDK_SECRET = 'RIJMIRrDa5LEVUlUjf0KC1T5pVUuhR0zBKL0'
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   var signatureEndpoint = 'http://localhost:4000/'
-  var createMeetingEndpoint = 'http://54.165.82.130:5000/createmeeting'
+  var createMeetingEndpoint = 'https://54.165.82.130/createmeeting'
   var getMeetingEndpoint = 'http://54.165.82.130:5000/get_meetings'
   // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
   var sdkKey = 'RnGHHOJG8zC3K0WTOuAltmjmMye0NT0HsHbW'
