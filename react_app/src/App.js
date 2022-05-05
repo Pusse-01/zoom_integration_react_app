@@ -26,13 +26,13 @@ function App() {
   var createMeetingEndpoint = 'http://54.165.82.130:5000/createmeeting'
   var getMeetingEndpoint = 'http://54.165.82.130:5000/get_meetings'
   // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
-  var sdkKey = 'dwTGVCHCwYG79SpLKVoyNrFY7I95tD5BdvlH'
+  var sdkKey = 'RnGHHOJG8zC3K0WTOuAltmjmMye0NT0HsHbW'
   var meetingNumber 
   var role = 1
   var leaveUrl = 'https://Pusse-01.github.io/zoom_integration_react_app'
   var userName = 'User'
-  var userEmail = ''
-  var passWord = '123456'
+  var userEmail = 'meulabs.sl@gmail.com'
+  var passWord = ''
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
   // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
   // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
@@ -47,6 +47,7 @@ function get_meetings() {
       // console.log(response);
       // meetingNumber = response;
       const signature = createSignature(parseInt(response));
+      console.log(response)
       startMeeting(signature,parseInt(response))
       return response;
     }).catch(error => {
