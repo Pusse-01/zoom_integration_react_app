@@ -127,6 +127,9 @@ function create_meeting() {
           tk: registrantToken,
           success: (success) => {
             console.log(success)
+            ZoomMtg.record({
+                record: true
+            });
           },
           error: (error) => {
             console.log(error)
