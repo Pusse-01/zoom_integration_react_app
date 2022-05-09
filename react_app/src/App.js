@@ -48,7 +48,7 @@ function get_meetings() {
       // meetingNumber = response;
       const signature = createSignature(parseInt(response));
       console.log(response)
-      startMeeting(signature, meetingNumber)
+      startMeeting(signature,parseInt(response))
       return response;
     }).catch(error => {
       console.error(error)
@@ -147,17 +147,17 @@ function create_meeting() {
   
 
 
-// function join_meeting(){
-//   get_meetings();
-//   console.log(meetingNumber)
+function join_meeting(){
+  const signature = createSignature(meetingNumber);
+  startMeeting(signature, meetingNumber)
 
-// }
+}
 
   return (
     <div className="App">
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
-        <button onClick={get_meetings}>Start Meeting</button>
+        <button onClick={join_meeting}>Start Meeting</button>
       </main>
       {/* <main>
   <div> 

@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/zoom_integration_react_app/static/css/main.cfc83717.chunk.css",
-    "main.js": "/zoom_integration_react_app/static/js/main.209053e4.chunk.js",
-    "main.js.map": "/zoom_integration_react_app/static/js/main.209053e4.chunk.js.map",
+    "main.js": "/zoom_integration_react_app/static/js/main.afcbd223.chunk.js",
+    "main.js.map": "/zoom_integration_react_app/static/js/main.afcbd223.chunk.js.map",
     "runtime-main.js": "/zoom_integration_react_app/static/js/runtime-main.a11cf8a1.js",
     "runtime-main.js.map": "/zoom_integration_react_app/static/js/runtime-main.a11cf8a1.js.map",
-    "static/js/2.2547f326.chunk.js": "/zoom_integration_react_app/static/js/2.2547f326.chunk.js",
-    "static/js/2.2547f326.chunk.js.map": "/zoom_integration_react_app/static/js/2.2547f326.chunk.js.map",
+    "static/js/2.6323228d.chunk.js": "/zoom_integration_react_app/static/js/2.6323228d.chunk.js",
+    "static/js/2.6323228d.chunk.js.map": "/zoom_integration_react_app/static/js/2.6323228d.chunk.js.map",
     "static/js/3.43290912.chunk.js": "/zoom_integration_react_app/static/js/3.43290912.chunk.js",
     "static/js/3.43290912.chunk.js.map": "/zoom_integration_react_app/static/js/3.43290912.chunk.js.map",
     "index.html": "/zoom_integration_react_app/index.html",
     "static/css/main.cfc83717.chunk.css.map": "/zoom_integration_react_app/static/css/main.cfc83717.chunk.css.map",
-    "static/js/2.2547f326.chunk.js.LICENSE.txt": "/zoom_integration_react_app/static/js/2.2547f326.chunk.js.LICENSE.txt"
+    "static/js/2.6323228d.chunk.js.LICENSE.txt": "/zoom_integration_react_app/static/js/2.6323228d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a11cf8a1.js",
-    "static/js/2.2547f326.chunk.js",
+    "static/js/2.6323228d.chunk.js",
     "static/css/main.cfc83717.chunk.css",
-    "static/js/main.209053e4.chunk.js"
+    "static/js/main.afcbd223.chunk.js"
   ]
 }
