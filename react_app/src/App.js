@@ -19,20 +19,20 @@ function App() {
 
   var API_KEY = 'pnnUcpQSS4-aV1pPrFi9Ng'
   var API_SEC = 'hnZYNbmowkIs039SJE3MKx6umc4p29YxbA6H'
-  var ZOOM_SDK_KEY = 'RnGHHOJG8zC3K0WTOuAltmjmMye0NT0HsHbW'
-  var ZOOM_SDK_SECRET = 'RIJMIRrDa5LEVUlUjf0KC1T5pVUuhR0zBKL0'
+  var ZOOM_SDK_KEY = 'ZFD3L0icBEBKPEcpG9jI4UFAGFHXtY1B612O'
+  var ZOOM_SDK_SECRET = 'ZvFB2Y0aB337IkixuPUegDoSMV2HL4hMUSq1'
   // setup your signature endpoint here: https://github.com/zoom/meetingsdk-sample-signature-node.js
   var signatureEndpoint = 'http://localhost:4000/'
   var createMeetingEndpoint = 'https://54.165.82.130/createmeeting'
   var getMeetingEndpoint = 'https://54.165.82.130/get_meetings'
   // This Sample App has been updated to use SDK App type credentials https://marketplace.zoom.us/docs/guides/build/sdk-app
-  var sdkKey = 'RnGHHOJG8zC3K0WTOuAltmjmMye0NT0HsHbW'
-  var meetingNumber = '86359361045'
+  var sdkKey = 'ZFD3L0icBEBKPEcpG9jI4UFAGFHXtY1B612O'
+  var meetingNumber = '81818004304'
   var role = 1
   var leaveUrl = 'https://Pusse-01.github.io/zoom_integration_react_app'
   var userName = 'User'
-  var userEmail = 'meulabs.sl@gmail.com'
-  var passWord = ''
+  var userEmail = 'dinesh@sp-solutions.biz'
+  var passWord = '351505'
   // pass in the registrant's token if your meeting or webinar requires registration. More info here:
   // Meetings: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/meetings#join-registered
   // Webinars: https://marketplace.zoom.us/docs/sdk/native-sdks/web/client-view/webinars#join-registered
