@@ -4,22 +4,15 @@ main {
   text-align: center;
 }
 
-main button {
-  margin-top: 20px;
-  background-color: #2D8CFF;
-  color: #ffffff;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: inline-block;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  outline: none;
+.home{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
 }
 
-main button:hover {
-  background-color: #2681F2;
+.home h1{
+  margin-bottom: 25px;
 }
+
