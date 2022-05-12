@@ -96,6 +96,7 @@ function App() {
 
     ZoomMtg.init({
       leaveUrl: leaveUrl,
+      isSupportAV: true,
       success: (success) => {
         console.log(success);
 
