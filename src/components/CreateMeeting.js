@@ -58,7 +58,7 @@ const CreateMeeting = (props) => {
                     <th scope="col">id</th>
                     <th scope="col">Topic</th>
                     <th scope="col">start_time</th>
-                    <th scope="col">join_url</th>
+                    {/* <th scope="col">join_url</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -67,7 +67,7 @@ const CreateMeeting = (props) => {
                     <td>{SuccessData.id}</td>
                     <td>{SuccessData.topic}</td>
                     <td>{SuccessData.start_time}</td>
-                    <td>
+                    {/* <td>
                       <a href={SuccessData.join_url} target="_blank">
                         Click to join
                       </a>
@@ -80,7 +80,7 @@ const CreateMeeting = (props) => {
                       >
                         Copy to Clipboard
                       </button>
-                    </td>
+                    </td> */}
                   </tr>
                 </tbody>
               </table>
