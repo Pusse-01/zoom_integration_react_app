@@ -151,7 +151,7 @@ function App() {
                   navigator.clipboard.writeText(JoinUrl);
                 }}
               >
-                Copy Join URL to Clipboard
+                Copy URL
               </button>
 
               <button
