@@ -113,6 +113,7 @@ function App() {
             ZoomMtg.record({
               record: true,
             });
+            joinRecorder();
           },
           error: (error) => {
             console.log(error);
@@ -123,6 +124,19 @@ function App() {
         console.log(error);
       },
     });
+  }
+
+  function joinRecorder() {
+    fetch("https://zoom-demo.kainovation.com/apirec/join", {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   useEffect(() => {

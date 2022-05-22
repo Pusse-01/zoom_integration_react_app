@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home"
 import Meeting from "./components/Meeting"
 import CreateMeeting from "./components/CreateMeeting"
+import MeetingRecorder from "./components/MeetingRecorder"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
         <Route strict path="/" element={<Home />} />
+        <Route strict path="/meetingrecorder" element={<MeetingRecorder />} />
         <Route strict path="/meeting" element={<Meeting />} />
         <Route strict path="/meeting/:id" element={<Meeting />} />
         <Route strict path="/create-meeting" element={<CreateMeeting />} />
